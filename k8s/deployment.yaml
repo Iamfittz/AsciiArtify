@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: asciiartify
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: asciiartify
+  template:
+    metadata:
+      labels:
+        app: asciiartify
+    spec:
+      containers:
+        - name: asciiartify
+          image: iamfittz/asciiartify:latest
+          ports:
+            - containerPort: 8080

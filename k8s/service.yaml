@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: asciiartify
+spec:
+  type: ClusterIP
+  selector:
+    app: asciiartify
+  ports:
+    - port: 8080
+      targetPort: 8080
