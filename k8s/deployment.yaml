@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: asciiartify
-          image: nginx:latest
-          # image: nginx:1.27
+          #image: nginx:latest
+          image: nginx:1.27
           ports:
             - containerPort: 8080
